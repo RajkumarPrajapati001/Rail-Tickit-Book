@@ -4,10 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FF9800"
     android:orientation="vertical"
-    tools:context=".Index"
-    android:background="#FF9800">
+    tools:context=".Index">
 
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+        android:minHeight="?attr/actionBarSize"
+        app:title="Book Tickit"
+        app:titleTextColor="@color/black" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,15 +29,16 @@
         android:padding="30dp">
 
         <com.toptoche.searchablespinnerlibrary.SearchableSpinner
-            android:id="@+id/spinner"
+            android:id="@+id/form"
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:layout_marginTop="15dp"
             android:background="@drawable/border"
             app:hintText="FORM" />
 
+
         <com.toptoche.searchablespinnerlibrary.SearchableSpinner
-            android:id="@+id/spinner2"
+            android:id="@+id/to"
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:layout_marginTop="15dp"
@@ -46,7 +56,7 @@
             android:textStyle="bold" />
 
         <Spinner
-            android:id="@+id/spinner3"
+            android:id="@+id/seat"
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:layout_marginTop="15dp"
@@ -64,12 +74,97 @@
             android:textStyle="bold" />
 
         <Spinner
-            android:id="@+id/spinner4"
+            android:id="@+id/cls"
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:layout_marginTop="15dp"
             android:background="@drawable/border"
             app:hintText="Number Of Seats" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Select Train"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/trainselceted"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/border"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Select Date"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/border"
+                android:hint="12/02/2022"
+                android:inputType="date"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Ticket Price"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/tktprice"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/border"
+               />
+
+        </LinearLayout>
 
         <Button
             android:id="@+id/next"
@@ -80,7 +175,7 @@
             android:fontFamily="@font/roboto_medium"
             android:gravity="center"
             android:padding="10dp"
-            android:text="Next"
+            android:text="Book Now"
             android:textSize="20sp"
             android:textStyle="bold" />
 

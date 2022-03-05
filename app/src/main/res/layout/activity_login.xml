@@ -15,7 +15,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -68,20 +68,20 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/loginEmail"
+                    android:id="@+id/txtUsername"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
                     android:background="@drawable/border"
                     android:ems="10"
-                    android:hint="Email"
+                    android:hint="Username"
                     android:inputType="textEmailAddress"
-                    android:padding="15dp"
+                    android:padding="10dp"
                     android:textColor="@color/black"
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/loginPassword"
+                    android:id="@+id/txtPassword"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
@@ -89,20 +89,29 @@
                     android:ems="10"
                     android:hint="Password"
                     android:inputType="text"
-                    android:padding="15dp"
+                    android:padding="10dp"
                     android:textColor="@color/black"
                     android:textStyle="bold" />
 
-                <Button
-                    android:id="@+id/loginButton"
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="right"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/button_background_blue"
+                    tools:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/btnLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/homeback"
                     android:backgroundTint="@null"
+                    android:gravity="center"
+                    android:padding="10dp"
                     android:text="Login"
-                    android:textColor="#000000"
+                    android:textColor="#FFFFFF"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -113,10 +122,10 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="15dp"
                     android:gravity="center"
-                    android:padding="10dp"
+                    android:padding="8dp"
                     android:text="Don't have a Account?"
                     android:textColor="@android:color/secondary_text_light"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textStyle="bold" />
 
 

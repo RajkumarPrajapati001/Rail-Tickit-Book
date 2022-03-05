@@ -20,10 +20,10 @@
         <entry key="..\:/Android_/Login2/app/src/main/res/drawable/inadexback.xml" value="0.240625" />
         <entry key="..\:/Android_/Login2/app/src/main/res/drawable/registerback.xml" value="0.240625" />
         <entry key="..\:/Android_/Login2/app/src/main/res/drawable/twocolor.xml" value="0.240625" />
-        <entry key="..\:/Android_/Login2/app/src/main/res/layout/activity_book_ticket_rtms.xml" value="0.22447916666666667" />
+        <entry key="..\:/Android_/Login2/app/src/main/res/layout/activity_book_ticket_rtms.xml" value="0.25" />
         <entry key="..\:/Android_/Login2/app/src/main/res/layout/activity_home_screen.xml" value="0.22447916666666667" />
-        <entry key="..\:/Android_/Login2/app/src/main/res/layout/activity_index.xml" value="0.25" />
-        <entry key="..\:/Android_/Login2/app/src/main/res/layout/activity_login.xml" value="0.21197916666666666" />
+        <entry key="..\:/Android_/Login2/app/src/main/res/layout/activity_index.xml" value="0.22447916666666667" />
+        <entry key="..\:/Android_/Login2/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/Android_/Login2/app/src/main/res/layout/activity_main.xml" value="0.22447916666666667" />
         <entry key="..\:/Android_/Login2/app/src/main/res/layout/activity_register.xml" value="0.25" />
         <entry key="..\:/Android_/Login2/app/src/main/res/layout/button_background_blue.xml" value="0.22447916666666667" />
@@ -34,6 +34,14 @@
         <entry key="..\:/Android_/Login2/app/src/main/res/layout/ic_launcher_foreground.xml" value="0.22447916666666667" />
         <entry key="..\:/Android_/Login2/app/src/main/res/layout/ic_login_hero.xml" value="0.22447916666666667" />
         <entry key="..\:/Android_/Login2/app/src/main/res/layout/ic_side_bg.xml" value="0.22447916666666667" />
+        <entry key="..\:/Android_/Login2/app/src/main/res/menu/rtms_toolbar.xml" value="0.22447916666666667" />
+        <entry key="..\:/Android_/Login2/app/src/main/res/menu/rtmstoolbar.xml" value="0.22447916666666667" />
+        <entry key="..\:/Android_/Login2/app/src/main/res/menu/toolbar.xml" value="0.22447916666666667" />
+        <entry key="..\:/Android_/Login2/app/src/main/res/menu/toolbar_rtms.xml" value="0.22447916666666667" />
+        <entry key="..\:/Android_/Login2/app/src/main/res/menu/toolbar_setting.xml" value="0.22447916666666667" />
+        <entry key="..\:/Android_/Login2/app/src/main/res/mipmap-anydpi-v26/rail.xml" value="0.17" />
+        <entry key="..\:/Android_/Login2/app/src/main/res/mipmap-anydpi-v26/rail_round.xml" value="0.105" />
+        <entry key="..\:/Android_/Login2/app/src/release/res/menu/rtms_toolbar.xml" value="0.22447916666666667" />
       </map>
     </option>
   </component>

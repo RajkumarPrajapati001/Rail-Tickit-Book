@@ -1,4 +1,4 @@
-package com.example.login;
+package com.example.TicketBooking;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,23 +6,21 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.TextView;
+
+import com.example.TicketBooking.databinding.ActivityHomeScreenBinding;
 
 public class HomeScreen extends AppCompatActivity {
 
-    TextView HomeSignup, HomeLogin;
-
+    ActivityHomeScreenBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home_screen);
-        getSupportActionBar().hide();
-//        getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        binding = ActivityHomeScreenBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+       // getSupportActionBar().hide();
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        HomeSignup = findViewById(R.id.homeSignUp);
-        HomeLogin = findViewById(R.id.homeLogin);
-
-        HomeSignup.setOnClickListener(new View.OnClickListener() {
+        binding.homeSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(HomeScreen.this, Register.class);
@@ -30,7 +28,7 @@ public class HomeScreen extends AppCompatActivity {
             }
         });
 
-        HomeLogin.setOnClickListener(new View.OnClickListener() {
+        binding.homeLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(HomeScreen.this, Login.class);
